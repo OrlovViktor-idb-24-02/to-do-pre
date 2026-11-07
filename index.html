@@ -13,7 +13,10 @@
         <form class="to-do__form">
           <input
             class="to-do__input"
+            type="text"
             name="task"
+            aria-label="Текст новой задачи"
+            required
             placeholder="Следующее дело..."
           />
           <button class="to-do__submit">Добавить</button>
@@ -27,9 +30,18 @@
     <template id="to-do__item-template">
       <li class="to-do__item">
         <span class="to-do__item-text"></span>
-        <button class="to-do__item-button to-do__item-button_type_edit" aria-label="Редактировать"></button>
-        <button class="to-do__item-button to-do__item-button_type_duplicate" aria-label="Копировать"></button>
-        <button class="to-do__item-button to-do__item-button_type_delete" aria-label="Удалить"></button>
+        <button
+          class="to-do__item-button to-do__item-button_type_edit"
+          aria-label="Редактировать"
+        ></button>
+        <button
+          class="to-do__item-button to-do__item-button_type_duplicate"
+          aria-label="Копировать"
+        ></button>
+        <button
+          class="to-do__item-button to-do__item-button_type_delete"
+          aria-label="Удалить"
+        ></button>
       </li>
     </template>
 
